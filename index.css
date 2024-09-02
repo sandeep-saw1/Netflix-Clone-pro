@@ -1,0 +1,174 @@
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: white;
+    overflow-x: hidden;
+    background-image: url(R.jpeg);
+    border-radius: 2px solid rgb(233, 8, 229);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #141414;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar img {
+    width: 100px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.hero {
+    height: 100vh;
+    background-image: url('https://source.unsplash.com/1600x900/?movie,netflix');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+.hero .input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.hero input[type="email"] {
+    padding: 15px;
+    font-size: 1.2em;
+    width: 300px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.hero button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: white;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.section {
+    padding: 50px 20px;
+    background-color: #141414;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.section .movies {
+    display: flex;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.section .movies img,
+.section .movies video {
+    width: 200px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.section .input-group {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.section input[type="email"] {
+    padding: 15px;
+    font-size: 1.2em;
+    width: 300px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.section button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: white;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
